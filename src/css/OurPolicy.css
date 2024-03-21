@@ -1,0 +1,90 @@
+/* OurPolicy.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .divider {
+    height: 70px;
+  }
+  
+  .policy-container {
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    overflow-x: auto; /* Enable horizontal scrollbar for smaller screens */
+  }
+  
+  .title {
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: start;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .line {
+    height: 2px;
+    width: 95%;
+    margin: auto;
+    background-color: #e0e0e0; /* 30% black */
+  }
+  
+  .policy-container .content {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  /* Section Styles */
+  .content-section {
+    margin-bottom: 40px;
+  }
+  
+  .content label {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    display: block;
+    color: black  ; /* 10% aqua */
+  }
+  
+  .content p {
+    padding-bottom: 20px;
+    line-height: 1.6; /* Improve line spacing */
+  }
+  
+  .policy-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .policy-container th,
+  .policy-container td {
+    border: 1px solid #e0e0e0; /* 30% black */
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .policy-container th {
+    background-color: #e0e0e0; /* 30% black */
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 357px) {
+    .policy-container th,
+    .policy-container td {
+      padding: 8px;
+    }
+  }
+  

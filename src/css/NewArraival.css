@@ -1,0 +1,26 @@
+    .new__arraival__content{
+        background-color: #caf2fa;
+        border-radius: 13px;
+        margin: auto;
+        padding: 10px;
+        width: calc(100% - 100px);
+        box-sizing: border-box;
+    }
+
+
+
+    .new__arraival__content {
+        padding: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .new__arraival__content .text {
+        font-size: 30px;
+        flex: 1;
+    }
+
+    .new_arrival_cards {
+        flex: 3;
+    }
+

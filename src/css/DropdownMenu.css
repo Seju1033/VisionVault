@@ -1,0 +1,46 @@
+/* Add your existing styles here */
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+justify-content: center;
+}
+
+.dropdown-header {
+    width: 150px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  z-index: 1;
+}
+
+.dropdown-options div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-options div:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,66 @@
+.Fastrack {
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.fastrack-top-banner,
+.fastrack-qoute,
+.fastrack-sunglasses,
+.fastrack-eyeglasses,
+.fastrack-naturwear-collection,
+.fastrack-retro-collection
+{
+    margin-bottom: 20px;
+}
+
+.Fastrack img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.fastrack-sunglasses {
+    display: flex;
+    text-align: center;
+}
+
+.fastrack-eyeglasses , .fastrack-retro-collection{
+    display: flex;
+    text-align: center;  
+}
+
+.fastrack-eyeglasses .fastrack-eyeglasses-content , .fastrack-retro-collection-content{
+    flex: 2;
+}
+
+.fastrack-naturwear-collection {
+    display: flex;
+   
+}
+
+
+
+/* catd */
+
+
+.ft-sunglasses-card,
+.ft-eyeglasses-card,
+.ft-natural-card,
+.ft-retro-card{
+    height: 300px;
+    width: 350px;
+    cursor: pointer;
+    color:rgb(110, 232, 232);
+}
+
+.fastrack-sunglasses-content,
+.fastrack-eyeglasses-content,
+.fastrack-neturwear-collection-content,
+.fastrack-retro-collection-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+   }
+

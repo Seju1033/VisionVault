@@ -1,0 +1,58 @@
+.VougeEyewear {
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.VougeEyewear img {
+    height: 100%;
+    width: 100%;
+}
+
+.vouge-banner-top,
+.vouge-qoute,
+.vouge-content,
+.vouge-women-section-1 ,
+.vouge-women-section-2 ,
+.vouge-men-section-1 ,
+.vouge-men-section-2{
+    margin-bottom: 20px;
+}
+
+.vouge-women-section-1 ,
+.vouge-women-section-2 ,
+.vouge-men-section-1 ,
+.vouge-men-section-2 {
+    display: flex;
+}
+
+.vouge-women-section-2-content , .vouge-men-section-2-content {
+    flex: 2;
+}
+
+
+
+/* card */
+
+.vouge-content {
+    display: flex;
+}
+
+
+.vouge-eyeglasses-card{
+    height: 300px;
+    width: 350px;
+    cursor: pointer;
+    color:rgb(110, 232, 232);
+}
+
+
+.vouge-women-section-1-content ,
+ .vouge-women-section-2-content ,
+  .vouge-men-section-1-content ,
+   .vouge-men-section-2-content {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+   }
+
+

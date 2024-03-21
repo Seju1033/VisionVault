@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.affordabel-glasses {
+    padding: 30px;
+}
+
+.affordabel-glasses img {
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.affordabel-glasses-cards {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.affordabel-glasses-card {
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    gap: 10px;
+   
+}
+
+.affordabel-glasses-card img {
+    border-radius: 20px;
+    height: 100%;
+    width:100%;
+}
+
+.affordabel-glasses-card h3 {
+    color: rgb(76, 76, 76);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.affordabel-glasses-card h2 {
+    margin-bottom: 10px;
+    color: black;
+    font-size:20px;
+    font-weight: 500;
+}
+
+
+.mini-filter {
+    width: calc(100% - 5%);
+    text-align: end;
+}
+
+
+.product-list {
+   
+    margin: 0 100px 0 100px;
+    
+}
+.custom-filter-container {
+    background-color: none;
+    width: 300px;
+}
+  
+  .product-list {
+    padding: 20px;
+  }
+  
+  
+  
+  .product-list .product-list-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    width: 75%;
+    margin-left: 10px; /* Add margin to the right of the product list for space */
+  }
+
+  /* Add these styles to your existing stylesheets or create a new one */
+
+  .product-list {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+
+  }
+  .card {
+    
+    
+      gap: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+      transform: scale(1.03);
+      background-color: aliceblue;
+  }
+  
+  .card img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+      padding: 20px;
+  }
+  
+  .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+  }
+  
+  .card-text {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 8px;
+  }
+  
+  .card-text:last-child {
+      margin-bottom: 0;
+  }
+  
+  /* Optional: Add media queries for responsiveness */
+  @media (max-width: 768px) {
+      .card {
+          margin-bottom: 15px;
+      }
+  }
+  
+  
+  
+  
+  
+
+

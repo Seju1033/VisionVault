@@ -1,0 +1,66 @@
+.ZealOptics {
+    padding: 80px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.zeal-top-baner ,
+ .zeal-container ,
+  .zral-title ,
+   .zeal-content ,
+    .zeal-qoute ,
+     .zeal-vid ,
+      .zeal-women ,
+       .zeal-men ,
+        .zeal-lifecycle ,
+         .zeal-container  ,
+          .zeal-banner1 ,
+           .zeal-banner2 ,
+            .zeal-banner3
+             {
+                    margin-bottom: 30px;
+}
+
+
+.ZealOptics img {
+    height: 100%;
+    width: 100%;
+}
+.ZealOptics h2 {
+    text-align: center;
+}
+
+.zeal-women , .zeal-men {
+    display: flex;
+    
+}
+
+.zeal-women-content{
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+}
+.zeal-men-content  {
+    justify-content: center;
+    text-align: center;
+    flex:2;
+}
+
+.zeal-content {
+    display: flex;
+}
+.zeal-card{
+    width: 330px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.zeal-women-content,.zeal-men-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.zeal-content-8{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

@@ -1,0 +1,41 @@
+.TedBaker {
+    box-sizing: border-box;
+    padding: 80px;
+    text-align: center;
+}
+
+.TedBaker img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ted-banner-top,
+.ted-qoute,
+.ted-men , 
+.ted-women{
+    margin-bottom: 20px;
+}
+
+.ted-men , .ted-women {
+    display: flex;
+}
+
+.ted-women-content {
+    flex: 2;
+}
+
+.ted-content{
+    display: flex;
+}
+.ted-card {
+    height: 300px;
+    width: 350px;
+    cursor: pointer;
+    color:rgb(110, 232, 232);
+}
+
+.ted-men-content , .ted-women-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}

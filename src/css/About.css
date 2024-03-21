@@ -1,0 +1,41 @@
+
+.divider {
+    height: 70px;
+}
+.about-container {  
+    border-radius: 5px;
+    margin: 70px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+    
+}
+.content{
+    display: block;
+    line-height: 30px;
+}
+.about-container .title 
+{
+    width: 100%;
+    padding: 20px 30px;
+    font-weight: 50px;
+    font-size: 35px;
+}
+.line {
+    height: 0.5px;
+    width: 95%;
+    margin: auto;
+    background-color: rgb(226, 207, 207);
+}
+.content label {
+    font-size: 25px;
+    padding: 30px;
+}
+.content p{
+    padding: 20px 30px;
+    margin: auto;
+    color: rgb(103, 100, 100);
+}
+@media screen and (max-width: 970px) {
+    .content label{
+        font-size: 20px;
+    }
+}

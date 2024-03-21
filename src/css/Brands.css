@@ -1,0 +1,41 @@
+.brands{
+    display: flex;
+}
+
+.brand-cards {
+    margin: 10px;
+}
+
+.cards { 
+    align-items: center;
+    text-align: center;
+    position: relative; 
+
+}
+
+.title  {
+    height: 50px;
+    width: 74% ;
+    left: 20px;
+    top: 270px;
+    border-radius: 10px;
+    background-color: rgb(197, 249, 249);
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 20px;
+}
+
+.brand-cards img {
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.brand-cards img:hover{
+    
+    transform: scale(1.02);
+}

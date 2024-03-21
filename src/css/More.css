@@ -1,0 +1,30 @@
+.more-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: #fff; 
+    margin-bottom: 20px;
+}
+
+.more-container .more-content {
+    flex: 1;
+    text-align: center ;
+}
+
+.more-container .more-content span {
+    color: rgb(107, 105, 105);
+}
+
+.more-container .more-content .more-rating {
+    display: flex;
+    justify-content: center;
+}
+.more-container .more-content .more-rating h3 {
+    font-size: 20px;
+    color: rgb(251, 213, 1);
+    justify-content: center;
+    top: 100px;
+}
+.more-content:not(:last-child) {
+    border-right: 1px solid #ccc; /* Adjust the color as needed */
+  }

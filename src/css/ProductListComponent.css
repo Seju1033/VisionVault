@@ -1,0 +1,39 @@
+/* ProductList.css */
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3, 1fr));
+    gap: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .product p {
+    margin: 5px 0;
+  }
+  
+  .product a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .product a:hover {
+    color: #555;
+  }
+  
+  /* Additional styles can be added as needed */
+  

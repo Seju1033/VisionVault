@@ -1,0 +1,66 @@
+.RayBan {
+    box-sizing: border-box;
+    padding: 80px;
+}
+.RayBan img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.rayban-top-banner,
+.rayban-qoute,
+.rayban-sun-eye-glasses,
+.rayban-banners,
+.rayban-categorys,
+.rayban-container,
+.rayban-container-2{
+    margin-bottom: 20px;
+}
+
+.rayban-sun-eye-glasses{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.rayban-sun-eye-glasses img {
+    padding: 10px;
+}
+
+.rayban-banners {
+    display: flex;
+}
+
+.rayban-banners img {
+    padding: 10px;
+}
+
+
+.rayban-categorys{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+
+}
+
+.rayban-categorys img {
+    padding: 10px;
+}
+
+.rayban-content-2 {
+    justify-content: center;
+    display: flex;
+}
+
+.rayban-sunglasses-card {
+    width: 420px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(40, 40, 40);
+}
+
+.rayban-sunglasses-card span {
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+    text-transform: uppercase;
+}

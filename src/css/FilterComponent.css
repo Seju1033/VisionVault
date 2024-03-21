@@ -1,0 +1,124 @@
+/* FilterComponent.css */
+
+.filter-container {
+  max-width: 300px;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 80px; /* Stick to 80px from the top of the viewport */
+  z-index: 2; /* Ensure it's on top of other elements */
+  background-color: white;
+}
+
+
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-heading span {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+
+.reset-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgb(35, 254, 254);
+  font-size: 15px;
+  font-weight: bold;
+ 
+}
+
+.filter-heading button:hover{
+  background-color: white;
+}
+
+.filter-option {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.filter-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-title span {
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.arrow-icon {
+  font-weight: 100;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.angle-down-arrow {
+  color: #b5b2b2;
+}
+
+.filter-dropdown-content {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column; /* Updated to make it a column */
+}
+
+.filter-option {
+  border-bottom: 1px solid #c7c6c6;
+}
+
+.custom-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: #666;
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 5px;
+  /* Add more checkbox styling as needed */
+}
+
+/* Hover effect for labels */
+.custom-label:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styling the checkboxes and labels individually */
+.filter-option .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666;
+  width: 100%;
+}
+
+
+
+.filter-dropdown-content .custom-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  cursor: pointer;
+  color: #666;
+  width: 100%; /* Added width: 100% to make it take the full width */
+}

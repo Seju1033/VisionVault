@@ -1,0 +1,16 @@
+
+.home-content {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.devider {
+    height: 90px;
+}
+
+.description-component {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+

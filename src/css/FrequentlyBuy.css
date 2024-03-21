@@ -1,0 +1,174 @@
+/* .fbcontainer {
+    background: linear-gradient(180deg, yellow, rgb(252, 252, 162));
+    border-radius: 13px;
+    margin: auto;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+}
+
+
+.cards {
+   padding: 10px;
+}
+
+.cards {
+   line-height: 10px;
+}
+
+.fbcontainer h2
+{
+   padding: 15px ;
+}
+
+img {
+   height: 130px;
+}
+
+.brand {
+   color: black;
+   text-transform: capitalize;
+   font-size: 16px;
+}
+
+.price {
+   color : black;
+   font-weight: 500;
+   
+}
+
+.icon {
+   padding: 2px;
+}
+ */
+
+
+
+
+
+
+
+ /* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.frequently-buy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, yellow, rgb(252, 252, 162));
+}
+
+
+.frequently-buy .wrapper {
+  max-width: 1300px;
+  width: 100%;
+  position: relative;
+  
+}
+.frequently-buy .wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.frequently-buy .wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.frequently-buy .wrapper i:first-child{
+  left: -22px;
+}
+.frequently-buy .wrapper i:last-child{
+  right: -22px;
+}
+.frequently-buy .wrapper .carousel{
+  display: grid;
+  padding: 7px;
+  margin: auto;
+  width: 100%;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 5) - 10px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.frequently-buy .carousel::-webkit-scrollbar {
+  display: none;
+}
+.frequently-buy .carousel.no-transition {
+  scroll-behavior: auto;
+}
+.frequently-buy .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.frequently-buy .carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.frequently-buy .carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frequently-buy .carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  width: 200px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(104, 92, 92, 0.15);
+}
+.frequently-buy .carousel .card .img {
+  height: 100%;
+  width: 100%;
+  
+}
+.frequently-buy .card .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  border:0px solid #fff;
+}
+
+.frequently-buy .carousel .card span {
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .frequently-buy .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .frequently-buy .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}

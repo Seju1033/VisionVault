@@ -1,0 +1,63 @@
+.ZerfPage {
+    padding: 80px;
+}
+
+.ZerfPage img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.zerf-banner-top,
+.zerf-eyeglasses-content{
+    margin-bottom: 20px;
+}
+
+.zerf-eyeglasses {
+    display: block;
+    text-align: center;
+}
+.zerf-eyeglasses-content {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+.zerf-eyeglasses-card {
+    height: 300px;
+    width: 350px;
+    cursor: pointer;
+    color:rgb(110, 232, 232);
+}
+
+.zerf-half-rim-content , .zerf-full-rim-content , .zerf-rimless-content{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+
+.zerf-eyeglasses h2 {
+    font-size: 3em;
+}
+
+.zerf-half-rim {
+    display: flex;
+    text-align: center;
+}
+
+.zerf-rimless{
+    display: flex;
+    text-align: center;
+}
+
+.zerf-rimless-content {
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.zerf-full-rim {
+    display: flex;
+    text-align: center;
+}
+
+

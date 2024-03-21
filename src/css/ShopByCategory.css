@@ -1,0 +1,218 @@
+
+.sbc-container {
+    box-shadow: none;
+    margin-right: 100px;
+    width: 100%;
+    padding: 80px;
+}
+
+
+.sbc-container .sbc-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: none;
+}
+
+h2 {
+    padding: 0 20px;
+    font-size: 35px;
+}
+
+.sbc-container .sbc-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sbc-container .sbc-box label {
+    font-size: large;
+    font-weight: 500;
+    text-align: start;
+	padding: 16px 0; 
+    order: 1;
+    color: rgb(37, 37, 37);
+    display: flex; /* Display label text as flex */
+    align-items: center;
+    justify-content: center; /* Center text vertically */
+    padding: 16px 20px;
+    margin-right: 4px;
+    cursor: pointer;
+    width: 20%;
+    border-bottom: 2px solid transparent;
+    transition:  0.3s;
+}
+
+
+
+.sbc-container .sbc-box .sbc-content {
+    display: none;
+    padding: 30px;
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.8);
+   
+}
+
+.sbc-container .sbc-box .sbc-content ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sbc-container .sbc-box .sbc-content ul li {
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+.sbc-container .sbc-box .sbc-content ul li::before {
+    content: "";
+    width: 140px; /* Set a percentage of the viewport width for responsive sizing */
+    height: 140px; /* Set a percentage of the viewport width for responsive sizing */
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 5px; /* Adjust as needed */
+	right: 5vw;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: -1;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sbc-container .sbc-box .sbc-content ul li img {
+    max-width: 100%;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.sbc-container .sbc-box .sbc-content ul li:hover img {
+    transform: scale(1.1); /* Increase the size by 20% on hover */
+}
+
+.sbc-container .sbc-box .sbc-content ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 10px;
+}
+
+.sbc-container .sbc-box input[type="radio"] {
+    display: none;
+}
+
+.sbc-container .sbc-box input[type="radio"]:checked+label {
+    background: #fff;
+    border-color: aqua;
+}
+
+.sbc-container .sbc-box input[type="radio"]:checked+label+.sbc-content {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .sbc-container .sbc-box .sbc-content,
+    .sbc-box label {
+        order: initial;
+    }
+
+	.sbc-container .sbc-box label {
+		width: 100%;
+	}
+
+    .sbc-container .sbc-box {
+        flex-direction: column-reverse; /* Stack items in reverse order on smaller screens */
+    }
+
+    .sbc-container .sbc-box label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 4px;
+        padding: 16px 20px;
+        text-align: start; /* Align label text to the start */
+    }
+
+    .sbc-container .sbc-box .sbc-content ul li {
+        width: 50%; /* Adjust for two items per row on smaller screens */
+    }
+
+
+
+	
+.sbc-container .sbc-box .sbc-content ul li::before {
+    content: "";
+    width: 130px; /* Set a percentage of the viewport width for responsive sizing */
+    height: 130px; /* Set a percentage of the viewport width for responsive sizing */
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 5px; /* Adjust as needed */
+	right: 5vw;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition:  0.5s;
+	padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+}
+
+@media (max-width: 600px) {
+
+.sbc-container .sbc-box .sbc-content ul li::before {
+    content: "";
+    width: 120px; /* Set a percentage of the viewport width for responsive sizing */
+    height: 120px; /* Set a percentage of the viewport width for responsive sizing */
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 5px; /* Adjust as needed */
+	right: 5vw;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition:  0.5s;
+	padding: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sbc-container .sbc-box .sbc-content ul li {
+    width: 50%; /* Adjust for two items per row on smaller screens */
+}
+}
+
+
+
+@media (max-width: 400px) {
+
+    .sbc-container .sbc-box .sbc-content ul li a {
+        font-size: 18px;
+    }
+
+    .sbc-container .sbc-box .sbc-content ul li::before {
+        content: "";
+        width: 90px; /* Set a percentage of the viewport width for responsive sizing */
+        height: 90px; /* Set a percentage of the viewport width for responsive sizing */
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        left: 5px; /* Adjust as needed */
+        right: 5vw;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: -1;
+        transition:  0.5s;
+        padding: 10px;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    }.sbc-container .sbc-box .sbc-content ul li {
+        width: 100%; /* Adjust for two items per row on smaller screens */
+    }
+    }
+    

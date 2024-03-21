@@ -1,0 +1,88 @@
+.accordion {
+    max-width: calc(100% - 20px);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 10px 80px;
+}
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px;
+}
+
+.accordion__label {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    display: block;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+
+.accordion__input {
+    display: none;
+  }
+
+  .accordion__content {
+
+    transition: 0.3s ease-in-out;
+  }
+
+  .accordion__input:checked + .accordion__label .fa-circle-plus {
+    display: none;
+  }
+
+  .accordion__input:checked + .accordion__label .fa-circle-minus {
+    display: inline-block;
+  }
+
+
+.accordion__content {
+    color: #8b8fa9;
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+    display: block;
+}
+
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #e9e6e6; 
+  }
+
+  
+  .accordion__content {
+    max-height: auto;
+    overflow: hidden;
+    transition: max-height 2s ease;
+  }
+
+  
+  .accordion__input:checked + .accordion__label .fa-circle-plus {
+    display: none;
+  }
+  
+  .accordion__input:checked + .accordion__label .fa-circle-minus {
+    display: inline-block;
+  }
+  

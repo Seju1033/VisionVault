@@ -1,0 +1,32 @@
+/* Blog.css */
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+        
+  }
+  
+  .blog-post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    margin-bottom: 10px;
+  }
+  
+  .post-header h2 {
+    margin: 0;
+  }
+  
+  .post-meta span {
+    margin-right: 10px;
+  }
+  
+  /* Add more styling based on your design preferences */
+  
